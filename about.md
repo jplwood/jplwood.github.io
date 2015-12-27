@@ -1,15 +1,20 @@
 ---
 layout: page
-title: About
+title: About Justin Paul Leatherwood
+menu-title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm a man of many interests -- some may say, too many. As an avid collector and player of acoustic instruments, I never have a shortage of new music to learn.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+{% highlight javascript %}
+//Do as the loop commands
+for each (video_below) {
+  watch();
+}
+{% endhighlight %}
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+- [Chris Thile shredding the mandolin](https://www.youtube.com/watch?v=eJ2FoqTlECI)
+- [Julian Lage playing Etude #1](https://www.youtube.com/watch?v=SdedBrenPsk)
+- [Bela Fleck and Sandip Burman crossing genres](https://www.youtube.com/watch?v=NLmsb758vlw)
+- [Tommy Emmanuel fingerpicking my face off](https://youtu.be/a3m0LLHX0tw?t=76)

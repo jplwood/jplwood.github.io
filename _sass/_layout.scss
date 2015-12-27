@@ -224,32 +224,34 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 1;
 }
 
 
 
 /**
- * Posts - yes!
+ * Post Cards - yes!
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit/4;
 }
 
 .post-title {
-    font-size: $large-font-size;
-    font-family: $alt-font-family;
-
+    font-size: $xlarge-font-size;
+    margin-bottom: 0;
     @include media-query($on-laptop) {
         font-size: 36px;
     }
 }
 .post-excerpt {
   font-size: $small-font-size;
+  line-height: 1;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    font-family: $alt-font-family;
 
     h2 {
         font-size: 32px;
@@ -274,20 +276,81 @@
             font-size: 18px;
         }
     }
+
+    aside {
+      padding-left: 15px;
+    }
+
+    .post-meta{
+      font-size: $large-font-size;
+      &:after {
+        content: '';
+      }
+    }
 }
 
-.paper {
+
+/* Post piece of paper */
+
+.paper-sheet {
+  background-color: $color-matte-yellow;
+  padding: 40px 50px;
+  margin: 70px 50px;
+  border-top: 15px solid $color-red;
+
+
+
+  -moz-box-shadow:    1px 1px 5px 6px rgba(30,30,30,0.3);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(30,30,30,0.3);
+  box-shadow:         1px 1px 3px 4px rgba(30,30,30,0.3);
+}
+
+/* Home Page Index Cards */
+.paper-card {
+
   background-color: $color-yellow;
   margin:10px;
   padding: 10px;
   height:90%;
+  -moz-box-shadow:    1px 1px 5px 6px rgba(15,15,15,0.3);
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(15,15,15,0.3);
+  box-shadow:         1px 1px 3px 4px rgba(15,15,15,0.4);
+
+  p, ol, ul {
+    font-size: $small-font-size;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: $base-font-size;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
 }
 
 .paper-post {
-  border-top: 10px solid $color-red;
+  border-top: 15px solid $color-red;
 }
 
 .paper-general {
-  border-top: 10px solid $color-blue;
+  border-top: 15px solid $color-blue;
+}
 
+/***
+ * CSS For Actual Posts
+ */
+.post a {
+    color: lighten($color-blue, 15%);
+    text-decoration: none;
+
+    &:visited {
+        color: lighten($color-blue, 15%);
+    }
+
+    &:hover {
+        color: $color-blue;
+        text-decoration: underline;
+    }
 }

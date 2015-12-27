@@ -7,15 +7,15 @@ layout: default
 
 
   <div class="col-1-2">
-    <div class="paper paper-general">
-      <h2>Welcome!</h2>
-      <p>Check some things out on here.
+    <div class="paper-card paper-general">
+      <h1>Well, hello there!</h1>
+      <p>I'm Justin Leatherwood. Trying to web, play instruments and write. Depending on the day, either spicy food or cheese will be my muse.</p>
     </div>
   </div>
 
   {% for post in site.posts %}
     <div class="col-1-2">
-      <div class="paper paper-post">
+      <div class="paper-card paper-post">
 
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

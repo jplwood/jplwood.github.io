@@ -4,9 +4,9 @@
 
   <div class="wrapper-header">
 
-    <img class="profile-pic" src="../images/aliens.jpg" />
+    <img class="profile-pic" src="/images/aliens.jpg" />
 
-    <div class="site-title"> 
+    <div class="site-title">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
 
@@ -22,9 +22,9 @@
       <div class="trigger">
         <ul>
         {% for my_page in site.pages %}
-          {% if my_page.title %}
+          {% if my_page.menu-title %}
           <li>
-            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.menu-title }}</a>
           </li>
           {% endif %}
         {% endfor %}
