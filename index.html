@@ -7,20 +7,23 @@ layout: default
 
 
   <div class="col-1-2">
-    <div class="paper-card paper-general">
+    <div class="paper-card">
       <h1>Well, hello there!</h1>
-      <p>I'm Justin Leatherwood. Trying to web, play instruments and write. Depending on the day, either spicy food or cheese will be my muse.</p>
+      <p>
+        Justin Leatherwood here -- I am an Aficionado of stinky cheeses, beer,
+        banjos, guitars, hammocks and mandolins.
+        Oh, and I like designing websites.
+      </p>
     </div>
   </div>
 
   {% for post in site.posts %}
     <div class="col-1-2">
-      <div class="paper-card paper-post">
-
+      <div class="paper-card card-general">
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
-        <p class="post-excerpt"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{{ post.excerpt }}</p>
+        <p class="post-excerpt"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{{ post.excerpt | strip_html }}</p>
       </div>
     </div>
   {% endfor %}
@@ -28,3 +31,5 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+
+{{ page.categories }}

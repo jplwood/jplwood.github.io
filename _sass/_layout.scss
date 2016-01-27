@@ -307,7 +307,7 @@
 
 /* Home Page Index Cards */
 .paper-card {
-
+  border-top: 15px solid $color-blue;
   background-color: $color-yellow;
   margin:10px;
   padding: 10px;
@@ -330,12 +330,12 @@
 
 }
 
-.paper-post {
-  border-top: 15px solid $color-red;
+.card-code {
+  border-color: complement($color-red);
 }
 
-.paper-general {
-  border-top: 15px solid $color-blue;
+.card-general {
+  border-top: 15px solid $color-red;
 }
 
 /***
