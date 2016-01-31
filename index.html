@@ -19,13 +19,7 @@ layout: default
 
   {% for post in site.posts %}
     <!-- Figuring out which css class to give the cards -->
-    {% assign card_class = "" %}
     <script>alert({{post.categories}})</script>
-    {% if "{{post.categories}}" == "code" %}
-      {% assign card_class = "card-code" %}
-    {% else %}
-      {% assign card_class = "card-general" %}
-    {% endif %}
     <div class="col-1-2">
       <div class="paper-card card-{{ post.categories }}">
         <h3>
