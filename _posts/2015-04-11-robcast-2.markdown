@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Thoughts about 'The River, The Mountain, and You' "
-modified: 
-categories: blog
+modified:
+categories: general
 excerpt: At first, the river is a river, and the mountain is a mountain.
 tags: [methinks, rob bell, spirituality]
 image:

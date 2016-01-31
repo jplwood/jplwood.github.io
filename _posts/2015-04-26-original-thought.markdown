@@ -2,7 +2,7 @@
 layout: post
 title: "Fromage à Trois"
 modified:
-categories: blog
+categories: general
 excerpt: Does anybody truly have novel ideas anymore?
 tags: [methinks, brewing, cheese]
 image:

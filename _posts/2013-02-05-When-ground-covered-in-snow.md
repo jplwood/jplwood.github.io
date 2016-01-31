@@ -4,12 +4,12 @@ title: "When the Ground is Covered with Snow"
 date: 2013-02-05 17:05:00
 tags: [burrsleeves, garbage, reflection, nature]
 excerpt: It's not so easy to pick up trash when there is a 1-foot layer of snow blanketing your town.
-categories: blog
+categories: general
 image:
   feature: lookingup-feature.jpg
 ---
 
-It's not so easy to pick up trash when there is a 1-foot layer of snow blanketing your town. 
+It's not so easy to pick up trash when there is a 1-foot layer of snow blanketing your town.
 
 Luckily, on the Saturday just prior to the beginning of the snow, we were able to head out and pick up some stuff. I accidentally shattered a snapple bottle after I found it in the river, and felt so awful! Here I am trying to pick up trash and then my own human nature sends a glass bottle through the air only to connect with a metal structure. The collision glittered the grass with millions of little glass shards. All I can say is, I'm trying! Haha, anyways,  the bagels were delicious and the garbage was abound. It is truly amazing how quickly the same area of my town can be so easily repopulated by crap. But I suppose that just means the job is never finished.
 

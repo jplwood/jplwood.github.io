@@ -4,10 +4,10 @@ title: "Warm Days in November"
 excerpt: On this warm Sunday in November, we picked up a little garbagio and it didn't take much. Next week we'll do it again!
 date: 2012-11-11 22:32:00
 tags: [burrsleeves, garbage, reflection, Kalamazoo]
-categories: blog
+categories: general
 ---
 
-Following last week, I headed into this weekend with a little better idea of what Burrsleeves could be. 
+Following last week, I headed into this weekend with a little better idea of what Burrsleeves could be.
 
 I recruited two more people and planned to head up to the same park-like area at the base of campus around 10:30am on Saturday. I headed out around 9:30am to stop by Meijer so I could buy some garbage bags and latex gloves. I also stopped by Big Apple Bagels and got a dozen bagels--for anybody who might be helping out. Additionally, I hoped I would run into the two men I spoke with last weekend and share some breakfast with them.
 

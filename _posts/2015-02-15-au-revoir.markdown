@@ -2,7 +2,7 @@
 layout: post
 title: "Au Revoir"
 modified:
-categories: blog
+categories: general
 excerpt: Farewell to Libertyville
 tags: [reflection, madison]
 image:

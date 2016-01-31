@@ -18,8 +18,16 @@ layout: default
   </div>
 
   {% for post in site.posts %}
+    <!-- Figuring out which css class to give the cards -->
+    {% assign card_class = "" %}
+    <script>alert({{post.categories}})</script>
+    {% if "{{post.categories}}" == "code" %}
+      {% assign card_class = "card-code" %}
+    {% else %}
+      {% assign card_class = "card-general" %}
+    {% endif %}
     <div class="col-1-2">
-      <div class="paper-card card-general">
+      <div class="paper-card card-{{ post.categories }}">
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
