@@ -1,3 +1,0 @@
-#This is a file telling travis-ci what to run when this is pushed (and builds) in GitHub
-language: ruby
-script: "bundle exec jekyll build"
