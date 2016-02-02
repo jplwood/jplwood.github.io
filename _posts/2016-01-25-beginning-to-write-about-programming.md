@@ -2,7 +2,7 @@
 layout: post
 title:  "Beginning to Write About Code"
 date:   2016-01-25
-categories: code
+category: code
 tags: [podcasting, general]
 excerpt_separator: <!--more-->
 ---

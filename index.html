@@ -3,9 +3,6 @@ layout: default
 ---
 
 <div class="home grid grid-pad">
-
-
-
   <div class="col-1-2">
     <div class="paper-card">
       <h1>Well, hello there!</h1>
@@ -18,9 +15,8 @@ layout: default
   </div>
 
   {% for post in site.posts %}
-    <!-- Figuring out which css class to give the cards -->
     <div class="col-1-2">
-      <div class="paper-card card-{{ post.categories }}">
+      <div class="paper-card card-{{ post.category }}">
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>

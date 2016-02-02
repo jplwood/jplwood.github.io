@@ -2,7 +2,7 @@
 layout: post
 title:  "HTML5 data-* attributes with JQuery"
 date:   2016-01-26
-categories: code
+category: code
 tags: [jquery, javascript, html5, data- attributes]
 ---
 

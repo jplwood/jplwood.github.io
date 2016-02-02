@@ -23,4 +23,10 @@ default:
       path: ""
       type: "posts"
     values:
-      excerpt_separator: <!--more-->
+      excerpt_separator: "<!--more-->"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      category: "general"

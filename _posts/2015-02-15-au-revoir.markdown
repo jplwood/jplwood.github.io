@@ -2,11 +2,10 @@
 layout: post
 title: "Au Revoir"
 modified:
-categories: general
 excerpt: Farewell to Libertyville
 tags: [reflection, madison]
 image:
-  feature:moving-truck.JPG
+  feature: moving-truck.JPG
 date: 2015-02-15T18:37:00-06:00
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Mendota"
 modified:
-categories: general
 excerpt: Last week, Lake Mendota started weeping outside my window.
 tags: [creative juices]
 image:

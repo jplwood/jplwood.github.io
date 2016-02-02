@@ -2,7 +2,6 @@
 layout: post
 title: "So Unemployed"
 modified:
-categories: general
 tags: [unemployment, reflection, Madison]
 excerpt: Time, for someone who until recently didn't have much, is most excellent most of the time.
 image:
