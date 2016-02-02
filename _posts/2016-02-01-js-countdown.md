@@ -26,6 +26,8 @@ function counter($el, n, func) {
 }
 {% endhighlight %}
 
-And I call that on a click, telling it which element (`$el`) to put the counter in, how many seconds I want it to run for (`n`) and then I give it function to execute at the end of the countdown.
+And I you do is call that on a `$('#countdown-button').click(function(){ ... })`, telling it which element (`$el`) to put the counter in, how many seconds I want it to run for (`n`) and then I give it function to execute at the end of the countdown.
 
 The function contains an immediately invoked function that utilizes [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout) to have the code pause for 1 second (1000 ms), and recursively call `count()` until `n` gets to 0.
+
+Fun times. Weeeeeeeee yavascript!
