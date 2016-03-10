@@ -251,7 +251,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    font-family: $alt-font-family;
+    font-family: $base-font-family;
 
     h2 {
         font-size: 32px;
@@ -312,6 +312,8 @@
   margin:10px;
   padding: 10px;
   height:90%;
+  max-width: 450px;
+  min-width: 400px;
   -moz-box-shadow:    1px 1px 5px 6px rgba(15,15,15,0.3);
   -webkit-box-shadow: 3px 3px 5px 6px rgba(15,15,15,0.3);
   box-shadow:         1px 1px 3px 4px rgba(15,15,15,0.4);
@@ -331,11 +333,11 @@
 }
 
 .card-code {
-  border-color: complement($color-red);
+  border-color: $color-red;
 }
 
 .card-general {
-  border-top: 15px solid $color-red;
+  border-color: $color-green;
 }
 
 /***

@@ -17,7 +17,7 @@ github_username:  jplwood
 # Build settings
 markdown: kramdown
 
-default:
+defaults:
   -
     scope:
       path: ""
