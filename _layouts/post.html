@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <div class="paper-sheet">
-    <header class="post-header">
+<article class="page">
+  <header class="red-bg">
+    <div class="header-block">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
       <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-      {{ content }}
     </div>
+  </header>
+
+  <div class="row">
+    <section class="col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1" itemprop="articleBody">
+      {{ content }}
+      {% include disqus.html %}
+    </section>
   </div>
-  {% include disqus.html %}
-</article>
+
+</div>

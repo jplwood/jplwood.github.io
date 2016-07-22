@@ -1,0 +1,287 @@
+/**
+ * Header
+ */
+.navbar-jbag {
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  background-color: $black;
+
+  a {
+    color:$green-light;
+  }
+
+  li {
+    >a, >a:visited {
+      color: $white;
+    }
+  }
+
+  button {
+    color:$white;
+  }
+
+  .navbar-brand,
+  .navbar-brand:visited {
+
+    &:hover, &:focus {
+      .glyphicon {
+        -webkit-animation:spin 2s linear infinite;
+        -moz-animation:spin 2s linear infinite;
+        animation:spin 2s linear infinite,
+                  strobe 600ms steps(1,end) infinite;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      @keyframes strobe {
+        25% { color: #ff0099}
+        50% { color: #f3f315 }
+        75% { color: #83f52c}
+        100% { color: #ff6600}
+      }
+    }
+  }
+  .navbar-toggle {
+    line-height: 0;
+    font-size:22px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+}
+
+ /**
+  * Homepage
+  */
+#home {
+  background-image: url('../images/devils-lake.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  padding-top: 40vh;
+
+  .quote-block {
+    padding: 15px;
+    margin: 0 10px;
+    position: relative;
+    line-height: 1.2;
+    background:rgba(245, 251, 255, 0.8);
+
+    .quote-meta {
+      margin-left: 15px;
+    }
+
+    .author,
+    .note {
+      display:inline;
+    }
+    .author {
+      &:before {
+        content:'- '
+      }
+    }
+
+    .note {
+      font-style:italic;
+      display:inline;
+
+      &:before {
+        content:', ';
+      }
+    }
+
+    #reload-quote{
+      display: none;
+    }
+
+    &:hover {
+      #reload-quote {
+        display: block;
+        position:absolute;
+        bottom:4px;
+        right:4px;
+        font-size: $small-font-size;
+        color:$red;
+      }
+    }
+  }
+}
+
+.mini-post {
+  .post-meta {
+    color: $gray-semi-dark;
+  }
+}
+
+/**
+ * Sections
+ */
+
+section {
+  min-height:100vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  z-index: 1;
+}
+
+.row {
+  margin-left: 0;
+  margin-right:0;
+}
+
+
+
+.gray-bg {
+  background-color:$gray-dark;
+  color:$white;
+
+  a {
+    color: $green-light;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.blue-bg {
+  background-color:$blue;
+  color:$white;
+
+  a {
+    color: $red;
+
+    &:hover, &:focus {
+      color:darken($red, 10%);
+      text-decoration: none;
+    }
+    &:visited {
+      &:hover {
+        color:darken($red, 10%);
+      }
+    }
+  }
+}
+
+.green-bg {
+  background-color:$green;
+  color:$white;
+
+  a {
+    color: $blue;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.red-bg {
+  background-color:desaturate(lighten($red,30%), 40%);
+  color:$white;
+
+  a {
+    color: $gray-dark;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page {
+  .navbar-jbag {
+    background-color: $black !important;
+  }
+
+  header {
+    min-height:200px;
+    margin-top: 50px;
+    position:relative;
+
+    .header-block {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  section{
+    min-height:100px;
+  }
+}
+
+.sidebar {
+
+  h3 {
+    margin:10px 0 4px 0;
+  }
+
+  p {
+    font-size: $small-font-size;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+
+  hr {
+    margin-top:2px;
+    margin-bottom:2px;
+  }
+}
+
+/**
+ * Footer
+ */
+.site-footer {
+  padding:20px;
+
+    .social-links {
+
+      a {
+        display:inline;
+        color: $green-light;
+        text-align: center;
+        font-size:$xlarge-font-size;
+        line-height: 1;
+
+        &:hover {
+          color:$red;
+        }
+      }
+  }
+}
+
+/**** Helper Classes ****/
+.inner-shadow {
+  -moz-box-shadow:    inset 0 0 15px $black;
+  -webkit-box-shadow: inset 0 0 15px $black;
+  box-shadow:         inset 0 0 15px $black;
+}
+
+.profile {
+  max-width: 500px;
+  height:auto;
+}
+
+.btn-red {
+  background-color: $red;
+  color:white;
+  border-color:darken($red, 10%);
+
+  &:hover {
+    background-color:darken($red, 5%);
+  }
+}
+
+.modal-content {
+  background-color: $gray-dark;
+  color: $white;
+  text-align: center;
+  padding:10px;
+
+  .glyphicon {
+    color:$green-light;
+  }
+}

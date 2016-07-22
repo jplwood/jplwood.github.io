@@ -2,31 +2,73 @@
 layout: default
 ---
 
-<div class="home grid grid-pad">
-  <div class="col-1-2">
-    <div class="paper-card">
-      <h1>Well, hello there!</h1>
-      <p>
-        Justin Leatherwood here -- I am an Aficionado of stinky cheeses, beer,
-        banjos, guitars, hammocks and mandolins.
-        Oh, and I like designing websites.
-      </p>
-    </div>
-  </div>
-
-  {% for post in site.posts %}
-    <div class="col-1-2">
-      <div class="paper-card card-{{ post.category }}">
-        <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-        <p class="post-excerpt"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{{ post.excerpt | strip_html }}</p>
+<section id="home" class="row">
+  <div class="col-sm-4 col-sm-offset-6 col-xs-12">
+    <!-- <img src="../images/aliens.jpg" alt="" class="profile-pic"/> -->
+    <div class="quote-block">
+      <p class="quote"></p>
+      <div class="quote-meta">
+        <p class="author"></p>
+        <p class="note"></p>
+      </div>
+      <div id="reload-quote">
+        <span class="glyphicon glyphicon-refresh" onclick="setRandomQuote()"></span>
       </div>
     </div>
-  {% endfor %}
+  </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section id="about" class="row gray-bg">
+  <div class="col-sm-3 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+    <img src="images/me.jpg" alt="me" />
+    <small><em>Classic hipster photo of me wearing a flannel shirt in front of a brick wall</em></small>
+  </div>
+  <div class="col-sm-6  col-xs-10 col-xs-offset-1">
+    <h2>Ahoy!</h2>
+    <p>
+      Welcome to my domain, glad to have you here! I'm Justin Leatherwood, a dude living in Wisconsin that likes to program. I'm currently the Tech Lead at the <a href="http://ipminstitute.org">IPM Institute of North America</a> and a contract writer for the <a href="http://blog.ionic.io/">Ionic Framework blog</a>.
+    </p>
+    <p>
+      I've long been intrigued by programming, ever since my first programming class where I built an amazing game in VB where a pixelated woman was launched from a cannon and superman had to catcher her. Okay, maybe it wasn't that amazing, but still. Programming, being intrigued.
+    </p>
+    <p>
+      Nowadays, I'm really into frontend web development, design and UX. While I really enjoy programming, I also love working with both technical and non-technical folks, often serving as the interface between these two worlds.
+    </p>
+    <p>
+      If you're interested check out my <a href="https://www.linkedin.com/in/jplwood">LinkedIn profile</a>. I do my best to keep it up-to-date. You can also checkout my <a href="https://github.com/jplwood">GitHub account</a>.
+    </p>
+  </div>
+</section>
 
-</div>
+<section id="blog" class="row blue-bg">
+  <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+    <header>
+      <h2 class="section-header">
+        <a href="/musings/">
+          Blog
+          <span class="glyphicon glyphicon-pencil"></span>
+        </a>
+      </h2>
+    </header>
+    {% for post in site.posts limit:5 %}
+    <div class="mini-post">
+      <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      <p class="post-excerpt"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> {{ post.excerpt | strip_html }}</p>
+    </div>
+
+    {% endfor %}
+
+
+    <h2 class="text-center"><a href="/musings/">More <span class="glyphicon glyphicon-hand-right"></span></a></h2>
+    <p class="rss-subscribe text-center">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+</section>
+
+<section id="contact" class="green-bg">
+  <h2 class="section-header"><span class="glyphicon glyphicon-phone-alt"></span> Contact</h2>
+  {% include contact-form.html %}
+</section>
 
 {{ page.categories }}

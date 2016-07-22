@@ -2,71 +2,92 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
 
-// Our variables
-$base-font-family: 'Work Sans', sans-serif;
+// Import variables
+@import "partials/variables";
 
-$base-font-size:   18px;
+// Import mixins
+@import "partials/mixins";
 
-$base-font-weight: 400;
-$xlarge-font-size: $base-font-size * 1.75;
-$large-font-size: $base-font-size * 1.25;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Import base print styles
+@import "partials/print";
 
-$spacing-unit:     30px;
-$spacing-unit-menu:2px;
+/*********************
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*********************/
 
-$text-color:       #111;
-$background-color: #fdfdfd;
+// styles in base.scss
+@import "breakpoints/base";
+
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+@media only screen and (min-width: 481px) {
+
+	// styles in 481up.scss
+	@import "breakpoints/481up";
+
+} // end of media query
+
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 768px) {
+
+	// styles in 768up.scss
+	@import "breakpoints/768up";
+
+} // end of media query
+
+/*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	@import "breakpoints/1030up";
+
+} // end of media query
+
+/*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+@media only screen and (min-width: 1240px) {
+
+	// styles in 1240up.scss
+	@import "breakpoints/1240up";
+
+} // end of media query
+
+/*********************
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*********************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.scss
+	@import "breakpoints/2x";
+
+} // end of media query
 
 
-$color-red:     #AA4E39;	// Main Primary color */
-$color-orange: #AA7539;	// Main Secondary color (1) */
-$color-blue: #27576B;	// Main Secondary color (2) */
-$color-green:  #297A4A;	// Main Complement color */
-$color-matte-yellow: #FFEECC;
-$color-yellow: #FFEABE; //#FFDA8F;
-$color-brown: #6F4E37;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 30%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-
-// Nav Sidebar
-$sidebar-width:   250px;
-$profile-pic-width: 75%;
-$text-color-nav: $grey-color-light;
-
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// Syntax Highlighting
+@import "partials/syntax-highlighting";

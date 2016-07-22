@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans);
+// Our variables
+$base-font-family: 'Open Sans', sans-serif;
+$alt-font-family: 'Montserrat';
+
+$base-font-size:   18px;
+
+$base-font-weight: 400;
+$xlarge-font-size: $base-font-size * 1.75;
+$large-font-size: $base-font-size * 1.25;
+$medium-font-size: $base-font-size * 1.1;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.4;
+
+$spacing-unit:     1em;
+
+$red:     #A4330A;
+$orange: #D96A0A;
+$blue: #86A4A1;
+$sky-blue: #DAF0F5;
+$green:  #297A4A;
+$green-light: lighten($green, 15%);
+$yellow: #F1D36B; //#FFDA8F;
+$brown: #6F4E37;
+$black: #2f2c2c;
+$black-tp: rgba(47, 44, 44, 0.3);
+$white: #F5FBFF;
+
+$gray:       #828282;
+$gray-light: lighten($gray, 30%);
+$gray-dark:  darken($gray, 25%);
+$gray-semi-dark:  darken($gray, 25%);
+
+
+$text-color:       $black;
+$background-color: #fdfdfd;
+
+$baby:         481px;
+$child:        768px;
+$adult:        1030px;
+$gumpa:        1240px;

@@ -1,0 +1,140 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    height:100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+@media screen and (max-width: $child) {
+  h1 {
+    font-size: $large-font-size;
+  }
+  p {
+    font-size: $small-font-size;
+  }
+}
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+    font-family: $alt-font-family;
+}
+
+h1, h2 {
+  .glyphicon {
+    font-size: $medium-font-size;
+    top:-2px;
+  }
+}
+
+.section-header {
+  text-align: center;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $green-light;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color:desaturate($green-light, 40%);
+
+    &:hover, &:focus {
+      color:desaturate($green-light, 40%);
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/**
+ * Horizontal Rule
+ */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}

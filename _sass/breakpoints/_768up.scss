@@ -1,0 +1,96 @@
+.navbar-jbag {
+  font-family: $alt-font-family;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease;
+  background-color: transparent;
+  font-size: $large-font-size;
+
+  &.scrolled {
+    background-color: $black;
+
+    a {
+      color:$green-light;
+    }
+
+    li {
+      >a, >a:visited {
+        color: $white;
+      }
+    }
+  }
+  .navbar-brand {
+    font-size: $large-font-size;
+    color:$black;
+  }
+
+  li {
+    >a, >a:visited {
+      border: 3px solid transparent;
+      color: $black;
+
+      &:hover, &:focus {
+        background: none;
+        text-decoration: underline;;
+      }
+    }
+  }
+}
+
+.page {
+  .navbar-jbag {
+    background-color: $gray-dark;
+    color:white;
+
+    &.scrolled {
+      background-color: $gray-dark;
+    }
+  }
+}
+
+/**
+ * Homepage
+ */
+#home {
+  padding-top: 55vh;
+
+
+ .quote-block {
+   max-width: 350px;
+   font-weight: bold;
+   line-height: 1.2;
+   position: absolute;
+
+   .quote {
+     font-size:$medium-font-size;
+   }
+
+
+
+   .author {
+     &:before {
+       content:'- '
+     }
+   }
+
+   .note {
+     font-style:italic;
+     display:inline;
+
+     &:before {
+       content:', ';
+     }
+   }
+
+   #reload-quote {
+     position:absolute;
+     bottom:4px;
+     right:4px;
+     font-size: $small-font-size;
+     color:$gray-semi-dark;
+
+     &:hover {
+       color: $red;
+     }
+   }
+ }
+}
