@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "HTML5 data-* attributes with JQuery"
+excerpt: I have a button that opens a Bootstrap modal, but there's a use case where I want to stop that button from opening the modal and instead display a tooltip.
 date:   2016-01-26
 category: code
 tags: [jquery, javascript, html5, data- attributes]
@@ -8,8 +9,6 @@ tags: [jquery, javascript, html5, data- attributes]
 
 ##The Challenge:
 I have a button that opens a Bootstrap modal, but there's a use case where I want to stop that button from opening the modal and instead display a tooltip.
-
-<!--more-->
 
 {% highlight html %}
 <!-- What I have to start -->
