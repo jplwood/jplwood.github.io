@@ -8,7 +8,9 @@
   &.scrolled {
     background-color: $black;
 
-    a {
+    a,
+    .navbar-brand,
+    .navbar-brand:visited  {
       color:$green-light;
     }
 
@@ -18,7 +20,8 @@
       }
     }
   }
-  .navbar-brand {
+  .navbar-brand,
+  .navbar-brand:visited {
     font-size: $large-font-size;
     color:$black;
   }
@@ -56,7 +59,6 @@
 
  .quote-block {
    max-width: 350px;
-   font-weight: bold;
    line-height: 1.2;
    position: absolute;
 
@@ -82,14 +84,21 @@
    }
 
    #reload-quote {
-     position:absolute;
-     bottom:4px;
-     right:4px;
-     font-size: $small-font-size;
-     color:$gray-semi-dark;
+     display: none;
+   }
 
-     &:hover {
-       color: $red;
+   &:hover {
+     #reload-quote {
+       display: block;
+       position:absolute;
+       bottom:4px;
+       right:4px;
+       font-size: $small-font-size;
+       color:$gray-semi-dark;
+
+       &:hover {
+         color: $red;
+       }
      }
    }
  }

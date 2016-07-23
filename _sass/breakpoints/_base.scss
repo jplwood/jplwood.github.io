@@ -91,19 +91,14 @@
     }
 
     #reload-quote{
-      display: none;
+      position:absolute;
+      bottom:4px;
+      right:4px;
+      font-size: $small-font-size;
+      color:$gray-semi-dark;
     }
 
-    &:hover {
-      #reload-quote {
-        display: block;
-        position:absolute;
-        bottom:4px;
-        right:4px;
-        font-size: $small-font-size;
-        color:$red;
-      }
-    }
+
   }
 }
 
@@ -143,10 +138,15 @@ section {
       text-decoration: underline;
     }
   }
+
+  h1,h2,h3,h4,h5,h6 {
+    color:$green-light;
+    margin:0;
+  }
 }
 
 .blue-bg {
-  background-color:$blue;
+  background-color:darken(desaturate($blue, 10%), 10%);
   color:$white;
 
   a {
@@ -177,18 +177,6 @@ section {
   }
 }
 
-.red-bg {
-  background-color:desaturate(lighten($red,30%), 40%);
-  color:$white;
-
-  a {
-    color: $gray-dark;
-
-    &:hover, &:focus {
-      text-decoration: underline;
-    }
-  }
-}
 
 .page {
   .navbar-jbag {
@@ -197,7 +185,7 @@ section {
 
   header {
     min-height:200px;
-    margin-top: 50px;
+    margin-top: 55px;
     position:relative;
 
     .header-block {
@@ -237,6 +225,9 @@ section {
 .site-footer {
   padding:20px;
 
+    h1,h2,h3 {
+      color:$white;
+    }
     .social-links {
 
       a {
@@ -263,6 +254,15 @@ section {
 .profile {
   max-width: 500px;
   height:auto;
+}
+
+.rss-subscribe,
+.rss-subscribe:visited {
+  color:$red;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: darken($red, 10%);
+  }
 }
 
 .btn-red {
