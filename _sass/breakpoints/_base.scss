@@ -59,6 +59,7 @@
   background-size:cover;
   background-attachment: fixed;
   padding-top: 40vh;
+  min-height: 100vh;
 
   .quote-block {
     padding: 15px;
@@ -113,7 +114,6 @@
  */
 
 section {
-  min-height:100vh;
   padding-top: 80px;
   padding-bottom: 60px;
 
