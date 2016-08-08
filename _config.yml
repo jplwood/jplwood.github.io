@@ -16,7 +16,7 @@ github_username:  jplwood
 
 
 # Build settings
-permalink:   /:categories/:title/
+permalink:   pretty
 markdown:    kramdown
 
 kramdown:
@@ -24,7 +24,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  use_coderay: false
+  enable_coderay: false
 
 defaults:
   -
