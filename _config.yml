@@ -16,7 +16,15 @@ github_username:  jplwood
 
 
 # Build settings
-markdown: kramdown
+permalink:   /:categories/:title/
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
 
 defaults:
   -
