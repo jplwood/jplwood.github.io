@@ -24,7 +24,12 @@ layout: default
             {% endif %}
 
             <p>
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              {% if post.exturl %}
+                <a href="{{ post.exturl }}" target="_blank">{{ post.title }}</a>
+                <small><span class="glyphicon glyphicon-new-window"></span></small>
+              {% else %}
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              {% endif %}
             </p>
             <hr>
             {% if forloop.last %}
