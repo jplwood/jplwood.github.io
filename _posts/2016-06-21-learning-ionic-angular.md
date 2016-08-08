@@ -7,4 +7,4 @@ tags: [jquery, javascript, bootstrap]
 exturl: http://blog.appcamp.io/learning-ionic-and-angular/
 ---
 
-This post was published on June 21, 2016 on the <a href="http://appcamp.io">Appcamp.io</a> blog.
+This post was published on June 21, 2016 on the <a href="http://blog.appcamp.io/learning-ionic-and-angular/">Appcamp.io</a> blog.
