@@ -1,0 +1,14 @@
+{% for post in site.posts limit:5 %}
+<div class="mini-post">
+  <h3>
+    {% if post.exturl %}
+      <a class="post-link" href="{{ post.exturl }}" target="_blank">{{ post.title }}</a>
+      <small><span class="glyphicon glyphicon-new-window"></span></small>
+    {% else %}
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% endif %}
+  </h3>
+  <p class="post-excerpt"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> {{ post.excerpt | strip_html }}</p>
+</div>
+
+{% endfor %}

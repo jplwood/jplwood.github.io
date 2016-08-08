@@ -108,9 +108,23 @@
   }
 }
 
+#blog {
+  .mini-post {
+    .post-meta {
+      color: $gray-semi-dark;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      span {
+        color: $gray-semi-dark;
+      }
+    }
+  }
+}
+
 .mini-post {
   .post-meta {
-    color: $gray-semi-dark;
+    color: $gray;
   }
 }
 
@@ -188,7 +202,7 @@ section {
   }
 
   header {
-    min-height:400px;
+    min-height:200px;
     margin-top: 55px;
     position:relative;
 
