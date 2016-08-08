@@ -7,7 +7,7 @@ category: code
 tags: [jquery, javascript, html5, data- attributes]
 ---
 
-##The Challenge:
+## The Challenge:
 I have a button that opens a Bootstrap modal, but there's a use case where I want to stop that button from opening the modal and instead display a tooltip.
 
 {% highlight html %}
@@ -21,7 +21,7 @@ In JQuery's [documentation for working with HTML5 data and _data-*_ attributes][
 
 So how can you set or change the value of a _data-*_ attribute using JQuery?
 
-##The Solution
+## The Solution
 Use the `.attr` method! Duh. Right? Yea, still a little confusing.
 
 {% highlight javascript %}
@@ -30,7 +30,7 @@ $('#free-trial-btn').attr('data-toggle', 'tooltip');
 
 So, in summary, if you want to set a _data-*_ attribute, use the [`.attr()`](http://api.jquery.com/attr/) function. If you want to access the value of an existing _data-*_ attribute, use the [`.data()`](https://api.jquery.com/data/) function `$('#free-trial-btn').data()`
 
-###And then a sidenote about tooltips and disabled buttons
+### And then a sidenote about tooltips and disabled buttons
 The next tricky thing I faced was getting a [tooltip][3] to work on a disabled button. Turns out the only simple way to do this without messing with the disabled button is to put the tooltip on a parent element. So here's my final solution, with a little bit of JQuery chaining to get all the work done:
 
 {% highlight html %}
