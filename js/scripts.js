@@ -47,7 +47,7 @@ $(document).ready(function() {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height()/2;
 
-    $('.quote-block').css({
+    $('.quote-block, .glyphicon-chevron-down').css({
         'opacity': ((height - scrollTop) / height)
     });
 });

@@ -115,14 +115,15 @@ a {
   color: $green-light;
 
   &:hover, &:focus {
+    color: $green-light;
     text-decoration: underline;
   }
 
   &:visited {
-    color:desaturate($green-light, 40%);
+    color:desaturate($green-light, 20%);
 
     &:hover, &:focus {
-      color:desaturate($green-light, 40%);
+      color:desaturate($green-light, 20%);
       text-decoration: underline;
     }
   }

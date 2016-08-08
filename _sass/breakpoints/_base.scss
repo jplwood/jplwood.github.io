@@ -101,6 +101,11 @@
 
 
   }
+
+  a .glyphicon-chevron-down {
+    font-size: 26px;
+    color:$white;
+  }
 }
 
 .mini-post {
@@ -183,7 +188,7 @@ section {
   }
 
   header {
-    min-height:200px;
+    min-height:400px;
     margin-top: 55px;
     position:relative;
 
@@ -258,6 +263,25 @@ section {
   max-width: 500px;
   height:auto;
 }
+
+.img-caption {
+  line-height: 1em;
+  font-size:$xsmall-font-size;
+  text-align: center;
+  padding: 5px 10px
+}
+
+.bottom-center {
+  position:absolute;
+  width:15px;
+  bottom:0;
+  right:0;
+  left:0;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+
 
 .rss-subscribe,
 .rss-subscribe:visited {
