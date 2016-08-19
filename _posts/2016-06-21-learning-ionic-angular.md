@@ -3,7 +3,7 @@ layout: post
 title:  "Learning Ionic and Angular"
 date:   2016-06-21
 category: code
-tags: [jquery, javascript, bootstrap]
+tags: [ionic,angular,learning]
 exturl: http://blog.appcamp.io/learning-ionic-and-angular/
 ---
 
