@@ -12,6 +12,9 @@
 // Import base print styles
 @import "partials/print";
 
+// Import Grid
+@import "partials/grid";
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -91,3 +94,6 @@ query for retina AND a certain size if you want. Go Nuts.
 
 // Syntax Highlighting
 @import "partials/syntax-highlighting";
+
+// Import Ionicons
+@import "partials/icons";

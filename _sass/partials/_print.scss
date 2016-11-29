@@ -114,6 +114,18 @@ h1, h2 {
 a {
   color: $green-light;
 
+  &.red {
+    color: $red;
+
+    &:hover, &:focus {
+      color:darken($red, 10%);
+      text-decoration: none;
+    }
+    &:visited, &:visited:hover {
+      color:darken($red, 10%);
+    }
+  }
+
   &:hover, &:focus {
     color: $green-light;
     text-decoration: underline;
@@ -138,4 +150,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
+}
+
+.small {
+  font-size: $small-font-size;
 }

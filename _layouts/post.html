@@ -8,15 +8,25 @@ layout: default
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
       <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     </div>
+    <a href="/blog">&#8610;<small>Back</small></a>
   </header>
+  
 
-  <div class="row">
-    <section class="col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1" itemprop="articleBody">
+  <section class="row">
+    <div class="col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1" itemprop="articleBody">
       {{ content }}
       <!-- Can't get Disqus to work
         {% include disqus.html %}
       -->
-    </section>
-  </div>
+
+    </div>
+  </section>
+  <p class="text-center">
+    <a class="red" href="/blog/">
+      <span class="glyphicon glyphicon-hand-left"></span>
+      Back to Blog 
+    </a>
+  </p>
+
 
 </div>
