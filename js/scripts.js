@@ -225,7 +225,7 @@ var quotes = [
     "note": ""
   },
   {
-    "quote": "We're programmers. Programmers are, in their hearts, architects, and the first thing they want to do when they get to a site is to bulldoze the place flat and build something grand. We're not excited by incremental renovation: tinkering, improving, planting flower beds.",
+    "quote": "Programmers are, in their hearts, architects, and the first thing they want to do when they get to a site is to bulldoze the place flat and build something grand. We're not excited by incremental renovation: tinkering, improving, planting flower beds.",
     "author": "Joel Spolsky",
     "note": "<a href='http://www.joelonsoftware.com/articles/fog0000000069.html'>Things You Should Never Do, Part I</a>"
   },
