@@ -31,4 +31,4 @@ So listening to this podcast, I realized that one major feature I contributed to
 Okay. Let's see if we can move this massive tower into the city, the big, messy city that is a huge web app.
 
 
-*The podcast I was talking about was Episode 124 from Adventures in Angular, ["From Junior to Senior Developer"(https://devchat.tv/adv-in-angular/124-aia-from-junior-to-senior-developer)]*
+*The podcast I was talking about was Episode 124 from Adventures in Angular, ["From Junior to Senior Developer"](https://devchat.tv/adv-in-angular/124-aia-from-junior-to-senior-developer)]*
