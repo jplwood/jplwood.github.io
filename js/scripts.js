@@ -232,9 +232,7 @@ var quotes = [
 ];
 
 /*
-
 For extra quotes
-
 {
   "quote": "",
   "author": "",
