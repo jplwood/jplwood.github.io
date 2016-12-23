@@ -3,10 +3,14 @@ layout: post
 title:  "I Built a Tower"
 date:   2016-12-22
 category: code
+image:
+  feature: Duke-Humphreys-Tower-ruins.jpg
 tags: [programming]
 ---
 
 I was just walking home listening to a podcast where one panelist used a great metaphor for distinguishing between new and experienced developers. 
+
+<!--more-->
 
 He said that regardless of how great of a programmer you are, newer developers tend to build towers. That tower could be absolutely immaculate but the question is, would it fit in a city. Could you build that same tower and have it integrate into a massive city. 
 
