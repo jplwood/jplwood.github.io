@@ -9,7 +9,7 @@ image:
 tags: [programming]
 ---
 
-Last year I participated in Madison Wisconsin's second annual Design Like Mad event as both a developer and the point person for the nonprofit I was working at. 
+Last year I participated in Madison Wisconsin's second annual [Design Like Mad](http://designlikemadison.com/) event as both a developer and the point person for the nonprofit I was working at. If you've never heard of DLM, you should check it out -- might be in a [city near you](http://designlikemad.org/).
 
 <!--more-->
 
