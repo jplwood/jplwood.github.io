@@ -9,11 +9,11 @@ image:
 tags: [programming]
 ---
 
-Last year I participated in Madison Wisconsin's second annual Design Like Mad event as both a developer, but also the point person for the nonprofit I was working at. 
+Last year I participated in Madison Wisconsin's second annual Design Like Mad event as both a developer and the point person for the nonprofit I was working at. 
 
 <!--more-->
 
-We applied to have a new website built for the organization and I would be the person to take it over after the one-day, 12 hour event. We got paired up with two programmers and two designers. I knew we were going to develop a WordPress theme, but I'd only ever worked on WordPress locally on my own. The trick with developing a WordPress site with others in a short period of time is that you need to keep both the code base, and the database in sync. After reading and doing some research and picking a starting point, this is the process I came up with.
+We applied to have a new website built for our organization. Assuming it wouldn't be completed in a day, it was determined that I'd head up planning and development as I would be the person to take it over after this one-day, 12-hour event. We got paired up with two programmers and two designers. I knew we were going to develop a WordPress theme, but I'd only ever worked on WordPress locally on my own. The trick with developing a WordPress site with others in a short period of time is that you need to keep both the code base, and the database in sync. After reading and doing some research and picking a starting point, this is the process I came up with.
 
 # The Tools We Went With
 
@@ -35,3 +35,4 @@ We applied to have a new website built for the organization and I would be the p
 
 **[WP Sync DB](https://github.com/wp-sync-db/wp-sync-db) -** This excellent, open-source plugin is where the data migration magic happens. It is the tiniest bit confusing at first to make sure you have things pointing in the right directions, but once you get it set up (you can save configs), it's easy-peasy. You'll need to install this plugin both locally and up on the development server. In it, you'll be able to, using hash keys, pull and push data. So as people start flooding your snazzy new WordPress site with content, downloading plugins and cruisin' along, you can easily pull in the latest database changes to match the latest code you're getting from GitHub!
 
+This is sort of a catalogue for myself to remember this, but also I put it together in hopes that others might find it useful. May update it in the future. Comment with questions or ideas!
