@@ -6,28 +6,40 @@ layout: default
   <header class="gray-bg" {% if page.image.feature %}style="min-height:450px; background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/{{ page.image.feature }}'); background-position: center center; background-size:cover;"{% endif %}>
     <div class="header-block">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}</time>
+        {% if page.author %} 
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span itemprop="name">{{ page.author }}</span>
+            </span>
+        {% endif %}
+      </p>
     </div>
-    <a href="/blog">&#8610;<small>Back</small></a>
   </header>
   
 
   <section class="row">
     <div class="col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1" itemprop="articleBody">
       {{ content }}
-      
-      {% if page.comments %}
-        {% include disqus.html %}
-      {% endif %}
-
     </div>
   </section>
+
   <p class="text-center">
     <a class="red" href="/blog/">
       <span class="glyphicon glyphicon-hand-left"></span>
       Back to Blog 
     </a>
   </p>
+
+  <section class="row">
+    <div class="col-sm-8 col-sm-offset-2  col-xs-10 col-xs-offset-1" itemprop="articleBody">
+      {% if page.comments %}
+        {% include disqus.html %}
+      {% endif %}
+    </div>
+  </section>
+
 
 
 </div>
