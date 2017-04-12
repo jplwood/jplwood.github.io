@@ -39,3 +39,6 @@ defaults:
       type: "posts"
     values:
       category: "general"
+
+sass:
+  style: compressed
